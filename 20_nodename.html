@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodename</title>
+  </head>
+  <body>
+    <!-- getting the node name of an html element -->
+    <div class="container">Hello</div>
+    <div class="box">World</div>
+    <span class="dabba">Full Stack Developer</span>
+    <script>
+      let element1 = document.querySelector(".container");
+      let element2 = document.querySelector(".box");
+      let element3 = document.querySelector(".dabba");
+      console.log(element1.nodeName); // nodeName is used to get the elements tag name
+      console.log(element2.nodeName);
+      console.log(element3.nodeName);
+      console.log(element3.innerText);
+      console.log(element3.tagName); // tagName is used to get the elements tag name
+      console.log(element3.firstChild.nodeValue); // elementValue is used to get the element value
+    </script>
+  </body>
+</html>

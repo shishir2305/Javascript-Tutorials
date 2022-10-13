@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innerhtml</title>
+  </head>
+  <body>
+    <div class="container">Hello World</div>
+    <div class="box">Cloud Computing</div>
+    <script>
+      let elem = document.querySelector(".container");
+      elem.innerHTML = "<h1>Full Stack Developer</h1>";
+      //   let element = document.querySelector(".box");
+      let element = document.getElementsByClassName("box")[0];
+      //   element.innerText = "Machine Learning Engineer";
+      element.innerText = "<h1>Hello</h1>";
+      // the difference between innertext and innerhtml is in innertext the given string is shown as it is but in innerhtml the given string is treated as a html element
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjacent Html Insertion</title>
+  </head>
+  <body>
+    <div class="container">Shishir Jha</div>
+    <script>
+      let container = document.querySelector(".container");
+      container.insertAdjacentHTML("beforebegin", "<h1>Before Begin</h1>");
+      container.insertAdjacentHTML("afterbegin", "<h1>After Begin</h1>");
+      container.insertAdjacentHTML("beforeend", "<h1>Before End</h1>");
+      container.insertAdjacentHTML("afterend", "<h1>After End</h1>");
+      // to get the example open google developer tools and check the console
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using DOM Selectors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">First</div>
+      <div class="second">Second</div>
+      <div class="third">Third</div>
+    </div>
+    <script>
+      let parent = document.querySelector(".container");
+      let first = parent.firstElementChild;
+      let last = parent.lastElementChild;
+      first.style.backgroundColor = "red";
+      last.style.backgroundColor = "yellow";
+      document.body.style.backgroundColor = "skyblue";
+    </script>
+  </body>
+</html>

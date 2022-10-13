@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class List Methods</title>
+    <style>
+      .container {
+        background-color: skyblue;
+        width: 100px;
+        height: 100px;
+      }
+      .box {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Full Stack Developer</div>
+    <button>Toggle</button>
+    <script>
+      let element = document.querySelector(".container");
+      let btn = document.querySelector("button");
+      //   btn.addEventListener("click", () => {
+      //     element.classList.toggle("box");
+      //   });
+      btn.addEventListener("click", () => {
+        if (element.classList.contains("box")) {
+          element.classList.remove("box");
+        } else {
+          element.classList.add("box");
+        }
+      });
+    </script>
+  </body>
+</html>

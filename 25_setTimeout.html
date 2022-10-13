@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Timeout and Set Interval</title>
+    <style>
+      .container {
+        background-color: skyblue;
+        width: 100px;
+        height: 100px;
+      }
+      .box {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Full Stack Developer</div>
+    <script>
+      let element = document.querySelector(".container");
+      //   setTimeout(() => {
+      //     element.classList.add("box");
+      //   }, 5000);
+      // settimeout is a function that takes two arguments, a function and a time in milliseconds and is used to execute certain thing after a fixed time
+
+      setInterval(() => {
+        element.classList.toggle("box");
+      }, 1000);
+      // setinterval is a function that takes two arguments, a function and a time in milliseconds and is used to execute certain thing after a fixed time and keeps on executing it after the fixed time
+    </script>
+  </body>
+</html>
